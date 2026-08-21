@@ -1,5 +1,7 @@
 # tidy-skills
 
+**English** · [中文](README.zh-CN.md)
+
 An agent skill that keeps your *other* skills tidy - the simplest way to
 manage AI agent skills across multiple CLI tools.
 
@@ -48,15 +50,6 @@ tidy-skills/
 ├── references/agent-directories.md   # where each CLI keeps skills
 └── assets/SKILLS-MAP.template.md     # inventory doc template
 ```
-
-## 中文简介
-
-多个 AI 编程 CLI 并用时，装的 skill 会慢慢烂掉：副本漂移、软链失效、版本
-分不清。不需要装管理器 - 把三样小东西交给 agent 自己执行：**中央真身库 +
-全软链**、**一份 md 地图**（人和 AI 都能读）、**一个只读体检脚本**。
-
-对 agent 说「整理一下我的 skills」「skill 乱了 / 不同步」即可触发。所有会
-动文件的步骤强制先备份；两边都有独有修改的 skill 一律先问再动。
 
 ## License
 
