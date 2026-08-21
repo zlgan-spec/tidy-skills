@@ -19,7 +19,13 @@ small things your agent can run itself:
 
 ## Install
 
-Put the folder in your agent's skill directory:
+One command, no dependencies:
+
+```bash
+npx skills add zlgan-spec/tidy-skills
+```
+
+Or clone it into your agent's skill directory:
 
 ```bash
 git clone https://github.com/zlgan-spec/tidy-skills.git ~/.claude/skills/tidy-skills
@@ -45,10 +51,8 @@ been edited on both sides, the agent stops and asks instead of merging.
 
 ```
 tidy-skills/
-├── SKILL.md                          # the method: workflow + judgment rules
-├── scripts/audit.sh                  # read-only scanner
-├── references/agent-directories.md   # where each CLI keeps skills
-└── assets/SKILLS-MAP.template.md     # inventory doc template
+├── SKILL.md          # the whole method: 6 principles + judgment rules
+└── scripts/audit.sh  # read-only scanner
 ```
 
 ## License

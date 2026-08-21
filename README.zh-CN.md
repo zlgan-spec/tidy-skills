@@ -12,7 +12,13 @@
 
 ## 安装
 
-把文件夹放进 agent 的 skill 目录：
+一条命令，零依赖：
+
+```bash
+npx skills add zlgan-spec/tidy-skills
+```
+
+或者直接 clone 进 agent 的 skill 目录：
 
 ```bash
 git clone https://github.com/zlgan-spec/tidy-skills.git ~/.claude/skills/tidy-skills
@@ -34,10 +40,8 @@ bash scripts/audit.sh
 
 ```
 tidy-skills/
-├── SKILL.md                          # 方法本体：工作流 + 判断规则
-├── scripts/audit.sh                  # 只读体检脚本
-├── references/agent-directories.md   # 各家 CLI 的 skill 目录在哪
-└── assets/SKILLS-MAP.template.md     # 地图文档模板
+├── SKILL.md          # 方法全部在这：6 条原则 + 判断规则
+└── scripts/audit.sh  # 只读体检脚本
 ```
 
 ## License
